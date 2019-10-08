@@ -76,7 +76,7 @@ $(document).ready(function(){
         itemsMobile:[599,1],
         pagination:false,
         navigationText:false,
-        autoPlay:true;
+        autoPlay:true,
     });
    
     
