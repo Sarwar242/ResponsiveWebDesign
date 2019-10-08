@@ -35,7 +35,8 @@ $(document).ready(function(){
             loop:true,
             centeredSlides:true,
             slideToclickedslide:true,
-            effect:"coverflow",grabcursor:true,
+            effect:"coverflow",
+            grabcursor:true,
             autoplay:false,
             navigation:{
                 nextEl: '.swiper-button-next',
@@ -76,9 +77,33 @@ $(document).ready(function(){
         itemsMobile:[599,1],
         pagination:false,
         navigationText:false,
-        autoPlay:true,
+        autoPlay:true
     });
    
+    $('.count').counterUp({
+            delay: 10,
+            time:4000
+        });
+    $("#clients-list").owlCarousel({
+        items:6,
+        autoPlay:false,
+        smartSpeed:700,
+        loop:true,
+        autoPlayHoverPause:true,
+        nav:false,
+        dots:false,
+        responsive:{
+            0:{
+                items:2
+            },
+            400:{
+                items:3
+            },
+            768:{
+                items:6
+            }
+        }
+    });
     
 });
 
